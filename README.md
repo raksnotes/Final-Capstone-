@@ -15,3 +15,9 @@ Demonstrated viability and applicability of proposed statistical tests
 ### Stephanie Garrett
 Cleaned and transformed CRE dataset
 Produced heatmap correlation visualization of CRE variables
+
+
+-------------------------------------------------------------------------
+
+
+We want to see the correlations between the dependent and independent variables. In order for that to be visualized, I proposed that I show a scatterplot matrix for different groups of independent variables vs. the dependent variable "Deaths" to see how they correlate, to test the normality and significance using my knowledge in R. 
