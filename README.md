@@ -16,7 +16,7 @@ The second scatterplot I will be doing is Deaths Vs. Race/Ethnicity, and the thi
 Altogether, in regard to our research question for testing overall significance of the data, I will be using the lm() function to create a full model, that would list
 all the significance of each independent variable, and potentially create a reduced model to narrow down the most significant variable in this model. 
 
-
+(Presentation file given in main branch)
 
 References: 
 1. A previous project that I've done in college that uses the same concept of creating a scatterplot matrix visualization using the pairs() function in RStudio. 
