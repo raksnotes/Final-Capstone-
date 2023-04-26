@@ -1,5 +1,6 @@
 # Final-Capstone-
-## Before we begin..
+
+## Before we begin[Directions for loading DB]
 
 In order for the script below to work we have to make sure of a couple things:
 
@@ -63,3 +64,39 @@ and don't make changes there!
     - This way, instead of loading in csv's you are connecting to a localized instance of a the DB on your own end, and can modify it as you wish, preprocess for ML,
       etc.
 
+# Contributions
+
+For this project, my main focus was primarily finding data that would give a complete understanding of Covid on the county level for the entire duration of the pandemic, meaning cases, and deaths.
+Seeing that we have a general understanding at the County and State level of socioeconomic factors, we also can derive which of those factors play an important role in covid mortality and thus justfiy
+whether or not the CRE is an accurate predictor of Covid mortality. 
+
+# The Data
+
+The data that the group initially selected(covid_data_log_200908.csv) was sourced from Kaggle and featured data from the first few months of the pandemic, and during the same week I found the John's Hopkins University
+dataset we would ultimately use. This dataset (covid_us_counties.csv) contained webscraped data from every county in the United States, with the dates ranging from 2-1-2020 to 2-9-2023. This data contained additional
+information I thought may be useful for visualization purposes, like latitude, longitude, state, and county. 
+
+# Processing the data
+
+Unsure if our team wanted to continue using the old covid data or not, I processed the old covid data and merged it with our CRE data so that we could begin performing EDA in a timely manner, 
+and followed suit with the larger, John's Hopkins University data as well. The processes for cleaning and EDA were intitially in the "Run_Through.ipynb" file, but to make it clearer, I split 
+those files into "Covid_DataOG_Preprocessing.ipynb", "CRE_Equity_County_19_Preprocessing.ipynb","OG_CD_and_CRE_Data_MERGED.ipynb", "JHU_Covid_Cases_ETL.ipynb", and "JHU_data_and_CRE_data_MERGED.ipynb". After
+teammates pointing out some needs with the data, the finalized data now exists as "JHU_Cases_Deaths_with_CRE_data_2_0.ipynb" and is what is stored and utilized on the Database.
+I utilized various python methods all found within those files to clean the data, and combine the datasets so that we could continue performing EDA and hashing out our hypothesis.
+
+My other main focus is database structure and database management. For the Machine Learning, it is my understanding upon feedback from my instructor that, sometimes it may be common 
+to have an entire collection of data from a csv placed into the database as is. As my group began the process of cleaning data, we were constantly updating, then having to go back and 
+redo tests and analysis up to the current version of the .csv. To amend this, I created a gitbash script that allows the team members to initialize the DB in their own localized instance,
+which then they can connect to in their environment of choice. This change allows the group to:
+
+    1. Have their own local development environment where if they need to adjust or alter the data, they no longer are reliant on a csv.
+    2. They can connect through their IDE of choice to the database and then feed data into various models that way.
+    3. Creates Data Persistence for the project.
+    4. Allows for database management and easy updates *should* we want to make a permanent, change to the database overall (again, reiterating Data Persistance.)
+    
+Since creating the database, I have created additional tables of interest using sqlalchemy to execute in jupyter notebook, that I think may be of greatest contribution to the covid cases and deaths,
+and then bolster our hypothesis. These queries included a 'JOIN' per project requirements.
+    
+    
+  
+    
