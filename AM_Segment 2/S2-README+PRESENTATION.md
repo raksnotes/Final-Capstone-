@@ -19,11 +19,11 @@ The main research question for this project is the question of whether the CRE m
 
 ## Data Exploration 
 The data exploration phase for this project entailed multiple approaches, statistical and visual.  Scatter plot visualizations and statistical summaries were generated using R to display the specific correlations between the individual risk factors which comprise the overall CRE rating for each county, comparing these variables both to eachother and to the county mortality data so that the significance of the CRE model as a whole can be understood at a more granular level.  While these explorations did reveal a number of inter-variable correlations [see below] it was ultimately decided to remove these secondary variables from the dataset so that the risk factor variables themselves could be focused upon.  This is due to these variables' nature as compound measurements inherently accounting for the magnitudes of many of the most prominent secondary variables, as well as being notable for being unique products of the CRE corpus which stand as the best representatives of the CRE project itself.  
-[INSERT DEATHSVVULNERABLEPOPS] 
-
+ ![DeathsVsVulnerablePops_MLR](https://github.com/raksnotes/Final-Capstone-/blob/Alexander/AM_Segment%202/Images/DeathsVsVulnerablePops_MLR.png)
+  ![DeathsVsVulnerablePops_MS](https://github.com/raksnotes/Final-Capstone-/blob/Alexander/AM_Segment%202/Images/DeathsVsVulnerablePops_MS.png)
 ## Data Analysis
 The results of the project's data analysis, such as they are at this moment, comprise primarily a set of statistical measures as seen below.  
-[INSERT STATS]
+ ![DeathsVsRF_MLR](https://github.com/raksnotes/Final-Capstone-/blob/Alexander/AM_Segment%202/Images/DeathsVsRF_MLR.png)
 These measures, specifically the p-values and t-values, are notable becuase the former indicates that there is a significant correlation between the CRE risk factor variables and COVID deaths while the latter indicates the directionality of that correlation is reversed in the case of the "Zero_RF" variables (i.e. the array of values for a given county absent major risk factors).  This, it is proposed by this project, corroborates the hypothesis that the precence of CRE major risk factors should correlate positively with increased COVID mortalities while their absence should correlate negatively.
 
 ## Technologies, Tools, and Algorithms
