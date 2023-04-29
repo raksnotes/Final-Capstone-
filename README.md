@@ -1,5 +1,3 @@
-# Final-Capstone-
-
 ## Before we begin[Directions for loading DB]
 
 In order for the script below to work we have to make sure of a couple things:
@@ -96,7 +94,3 @@ which then they can connect to in their environment of choice. This change allow
     
 Since creating the database, I have created additional tables of interest using sqlalchemy to execute in jupyter notebook, that I think may be of greatest contribution to the covid cases and deaths,
 and then bolster our hypothesis. These queries included a 'JOIN' per project requirements.
-    
-    
-  
-    
