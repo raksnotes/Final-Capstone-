@@ -44,7 +44,12 @@ The dashboard created was created using tableau
 The interactive dashboard showcases the covid data reported in the united states. The are 4 interactive charts within the dash board. The State Population chart displays the total population of each state. The cases and deaths chart displays total counts of covid cases and deaths from a state and county level. The risk factor chart untilizes the data from the CRE to represent the population from each state and county with zero risk factors, one to two risk factors and three plus riskfactos.
 There is also an interactive map that has 3 map layers, filtered by the risk factors. The map is also used as a filter for the charts provided. When a state and county it will filter the data within the dash board. Making it very user friendly. 
 
-Footnotes
+The following image below shows an image of the dashboard
+
+![covid_dashboard](https://user-images.githubusercontent.com/117749494/235545585-49d92e3e-0d3c-4b7e-9b73-88d8ed13099e.png)
+
+
+## Footnotes
 US Census Bureau, “Community Resilience Estimates Equity Supplement,” Census.gov, March 17, 2022, https://www.census.gov/programs-surveys/community-resilience-estimates/data/supplement.html. ↩
 
 Kaggle. “COVID-19 US County JHU Data & Demographics,” March 1, 2023. https://www.kaggle.com/datasets/headsortails/covid19-us-county-jhu-data-demographics. ↩
