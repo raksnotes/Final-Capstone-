@@ -37,6 +37,13 @@ Stephanie Garrett
 Cleaned and transformed CRE dataset
 Produced heatmap correlation visualization of CRE variables
 Combined the two original datasets into the single merged dataset
+
+# Tableau
+The dashboard created was created using tableau
+
+The interactive dashboard showcases the covid data reported in the united states. The are 4 interactive charts within the dash board. The State Population chart displays the total population of each state. The cases and deaths chart displays total counts of covid cases and deaths from a state and county level. The risk factor chart untilizes the data from the CRE to represent the population from each state and county with zero risk factors, one to two risk factors and three plus riskfactos.
+There is also an interactive map that has 3 map layers, filtered by the risk factors. The map is also used as a filter for the charts provided. When a state and county it will filter the data within the dash board. Making it very user friendly. 
+
 Footnotes
 US Census Bureau, “Community Resilience Estimates Equity Supplement,” Census.gov, March 17, 2022, https://www.census.gov/programs-surveys/community-resilience-estimates/data/supplement.html. ↩
 
