@@ -1,0 +1,10 @@
+pandas
+sqlalchemy
+flask
+json
+psycopg2
+decimal
+numpy
+warnings
+sklearn
+regex
