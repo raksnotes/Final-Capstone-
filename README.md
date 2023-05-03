@@ -1,6 +1,5 @@
 # Final-Capstone-
 
-## Segment 1
 
 
 -------------------------------------------------------------------------
@@ -14,7 +13,7 @@ So far, I've created a scatterplot matrix for 1 group of data that felt would be
 The second scatterplot I will be doing is Deaths Vs. Race/Ethnicity, and the third scatterplot is going to be Deaths Vs. Number of Risk Factors. 
 
 Altogether, in regard to our research question for testing overall significance of the data, I will be using the lm() function to create a full model, that would list
-all the significance of each independent variable, and potentially create a reduced model to narrow down the most significant variable in this model. 
+all the significance of each independent variable and whether it is determined to be meaningful for the regression. 
 
 (Presentation file given in main branch)
 
