@@ -1,0 +1,9 @@
+{
+    "dev": {
+        "db": "CRE_COVID_DB",
+        "user": "postgres",
+        "pass": "N3steaK00l!",
+        "host": "127.0.0.1",
+        "port": "5432"
+    }
+}
