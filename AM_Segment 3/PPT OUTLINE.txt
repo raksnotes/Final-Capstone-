@@ -1,0 +1,124 @@
+CAPSTONE POWERPOINT PRESENTATION OUTLINE
+
+1) INTRO [ALL]
+
+
+2) RESEARCH TOPIC [AM] [15sec]
+	-- GROUP INTERESTS:
+		-- PUBLIC HEALTH
+		-- DEMOGRAPHICS
+		-- LARGE-SCALE
+
+3) RESEARCH DATA 1 [AM] [15sec]
+	-- COVID-19 was the obvious choice, fitting all of these criteria
+
+4) RESEARCH DATA 2 [AM] [30sec]
+	-- the Johns Hopkins Coronavirus Resource Center began tracking live covid data 24/7 in January 2020, and stopped reporting three years later after the frequency of raw data collection in many  US states become too sparse to support the project.  the data has remained open source and available on the center's github.
+	-- the version of that dataset used for this project is limited to US reports indexed by county, and was incorporated with matching demographic and geospatial data by a Kaggle user who uploaded it for free use.   
+
+5) RESEARCH DATA 3 [AM] [1min]
+	-- The Community Resilience Estimates (CRE) dataset was compiled by the US Census Bureau from various census data collected over the course of 2019 (before covid), with the goal of providing an "easily understood metric for how atrisk every neighborhood in the United States is to the impacts of disasters, including COVID-19."
+	
+	-- The model itself is composed of numerous variables -- each the compound product of other survey data -- which represent best estimates for geodemographic factors such as net population, race and ethnicity, disability status, income inequality, housing conditions.  
+
+	-- Notably, this also includes the Community Resilience Factor variables themselves.  These variables are sorted into Zero Risk Factors, One-Two Risk Factors, and Three Risk Factors.  They are complex variables unique to the CRE methodology which are meant to indicate the general concentration in each county of the other specific risk factors such as those previously mentioned.             
+
+6) RESEARCH QUESTION [AM] [1min]
+	
+	-- The main research question for this project was whether the CRE model, as represented by the US Census Bureau data, posesses significant correlation with COVID-19 mortalities at the county level.  
+
+	-- To test for that hypothesized correlation, various statistical tests were to be performed comparing the CRE risk values to the real COVID-19 mortality data for each county.
+
+		-- testing NULL HYPOTHESIS = no relationship exists between covid deaths and CRE variables
+
+	-- Then, if the NullHyp is rejected, a machine learning algorithm was to be built and trained on the combined dataset, with the CRE coefficients as independant variables and total deaths as the dependant variable.
+		-- question of what kind of model?..... revealed by data exploration!
+			-- testing the empirical validity of the CRE model in the context of covid
+			-- possibly applicable to disaster scenarios beyond covid... 
+
+7) DATA EXPLORATION 1 [EV] [30sec]
+	-- introduction
+	-- tech and methods for exploration (R, Tableau, Excel, etc)
+	-- expectations for findings?
+
+8) DATA EXPLORATION 2 [EV] [30sec]
+	-- merging datasets
+		-- what changes?
+	-- why? = for Tableau map viz + R stats tests, etc
+
+9) DATA EXPLORATION 3 [EV] [3min]
+	-- Tableau map and visualizations
+	-- inspired by census bureau CRE interactive map
+		-- but we wanted a version that also showed COVID deaths
+	-- advantages and disadavantages of Tableau
+	-- what can it do? 
+	-- what kind of exploration did it help with?
+
+10) DATA EXPLORATION 4 [SG] [30sec]
+	-- exploring all CRE variables VS themselves + deaths
+	-- advantages and weaknesses of heatmap viz in Python
+	-- process of reducing heatmap down to most informative variables
+	-- conclusions?  
+
+11) DATA EXPLORATION 3 [RK] [30sec]
+	-- exploring SECONDARY CRE variables {VULNERABLE POPS} VS deaths
+	-- regression tests + scatter plots in R 
+
+12) DATA EXPLORATION 3 [RK] [30sec]
+	-- exploring SECONDARY CRE variables {RACIALIZED POPS} VS deaths
+	-- regression tests + scatter plots in R 
+
+13) DATA EXPLORATION 4 [RK] [1min]
+	-- exploring PRIMARY CRE variables {ZERO-THREE_RF} VS deaths
+	-- regression tests + scatter plots in R
+	-- what does this show?
+
+14) DATA ANALYSIS 1 [RK] [1min30sec]
+	-- conclusions after data exploration phase?
+		-- what data appears most useful?
+		-- observed data skew during exploratory phase...
+			-- implications for machine learning model?
+	-- what methods of analysis will be pursued?
+		--  
+
+15) DATA ANALYSIS 3 [SG] [30sec]
+	-- SQL ERD data pipeline
+		-- describe ERD
+		-- summarize python code  
+
+16) DATA ANALYSIS 5 [SG] [30sec]
+	-- ML training and testing
+		-- walk through code 
+	-- summarize outcomes 
+
+17) DATA ANALYSIS 6 [SG] [1min]
+	-- ML model fitting and classifiers
+		-- walk through code
+		-- interpret confusion matrices
+
+18) DATA ANALYSIS 7 [SG] [30sec]
+	-- Random Forest Classifier performs best because it does not discriminate between parametric and nonparametric variables, both of which are present in the combined dataset 
+	-- high probability that linear regression proved ineffective bc one variable was interacting with another, disrupting linearity
+
+19) RESULTS AND CONCLUSION [SG] [15sec]
+	-- what was it like working with these data?
+	-- was the ML model successful? 
+		-- what can we say about its predictive power?
+
+20) FINAL REMARKS [AM] [30sec] 
+	-- what would we do differently next time?
+		-- pay more attention to the implications of parametric vs nonparametric data
+			-- and consider more carefully how to use ML based on that
+ 
+	-- possible avenues for future research?
+		-- continue reproducing this experiment as covid data updates to test predictions
+		-- apply the same basic methodology comparing the CRE data to non-covid disasters
+		-- investigate further into the CRE variables themselves for intercorrelations 
+
+21) QUESTIONS & ANSWERS [ALL]
+
+23) THANK YOU [ALL]
+
+
+	   
+	
